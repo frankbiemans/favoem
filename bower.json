@@ -1,0 +1,25 @@
+{
+  "name": "startkitbasichtml",
+  "description": "StartKit for a basic HTML site",
+  "main": "",
+  "authors": [
+    "Frank Biemans"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "^3.3.1",
+    "jquery": "^3.1.1",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
