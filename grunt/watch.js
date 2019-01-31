@@ -1,14 +1,10 @@
 module.exports = {
 	sass: {
-		files: ['<%= build %>/css/base.sass', '<%= build %>/css/media-queries.sass'],
+		files: ['<%= build %>/css/*.sass', '<%= build %>/css/**/*.sass'],
 		tasks: ['render-css']
 	},
 	js: {
-		files: ['<%= build %>/js/load.js', '<%= build %>/js/functions.js'],
+		files: ['<%= build %>/scripts/load.js', '<%= build %>/scripts/functions.js'],
 		tasks: ['render-js']
-	},
-	browserify: {
-		files: ['<%= build %>/js/app-setup.js'],
-		tasks: ['browserify']
 	}
 };

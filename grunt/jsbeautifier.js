@@ -1,5 +1,5 @@
 module.exports = {
 	default: {
-		src: ["<%= build %>/js/functions.js", "<%= build %>/js/load.js", 'Gruntfile.js']
+		src: ["<%= build %>/scripts/functions.js", "<%= build %>/scripts/load.js", 'Gruntfile.js']
 	}
 };

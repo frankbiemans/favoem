@@ -6,4 +6,3 @@ module.exports = {
 	'render-lib-css': ['concat:bootstrap', 'sass:bootstrap', 'cssmin:bower_css_files']
 	
 }
-

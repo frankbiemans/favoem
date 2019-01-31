@@ -6,7 +6,7 @@ module.exports = {
 		files: {
 			'<%= build %>/css/libraries.min.css': [
 			'bower_components/normalize-css/normalize.css',
-			'bower_components/bootstrap/dist/css/bootstrap-custom.css'
+			'node_modules/bootstrap/scss/bootstrap-custom.css'
 			]
 		}
 	}

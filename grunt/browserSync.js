@@ -1,10 +1,12 @@
 module.exports = {
     bsFiles: {
         src: [
-        '<%= build %>/js/*.min.js',
-        '<%= build %>/js/app.js',
+        '<%= build %>/scripts/*.min.js',
         '<%= build %>/css/*.min.css',
-        '<%= build %>/*.php'
+        '<%= build %>/*.html',
+        '<%= build %>/images/*.jpg',
+        '<%= build %>/images/*.jpeg',
+        '<%= build %>/images/*.gif'
         ]
     },
     options: {

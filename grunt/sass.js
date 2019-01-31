@@ -6,7 +6,7 @@ module.exports = {
 	},
 	bootstrap: {
 		files: {
-			'bower_components/bootstrap/dist/css/bootstrap-custom.css': 'bower_components/bootstrap/scss/bootstrap-custom.scss'
+			'node_modules/bootstrap/scss/bootstrap-custom.css': 'node_modules/bootstrap/scss/bootstrap-custom.scss'
 		}
 	}
 };

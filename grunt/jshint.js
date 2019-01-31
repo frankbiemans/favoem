@@ -1,7 +1,7 @@
 module.exports = {
     files: [
-    '<%= build %>/js/functions.js',
-    '<%= build %>/js/load.js'
+    '<%= build %>/scripts/functions.js',
+    '<%= build %>/scripts/load.js'
     ],
     options: {
         expr: true,

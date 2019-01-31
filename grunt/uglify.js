@@ -1,7 +1,7 @@
 module.exports = {
     bower_js_files: {
         files: {
-            '<%= build %>/js/libraries.min.js': [
+            '<%= build %>/scripts/libraries.min.js': [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/modernizr/modernizr.js'
             ]
@@ -9,8 +9,8 @@ module.exports = {
     },
     custom_js_files: {
         files: {
-            '<%= build %>/js/functions.min.js': '<%= build %>/js/functions.js',
-            '<%= build %>/js/load.min.js': '<%= build %>/js/load.js'
+            '<%= build %>/scripts/functions.min.js': '<%= build %>/scripts/functions.js',
+            '<%= build %>/scripts/load.min.js': '<%= build %>/scripts/load.js'
         }
     }
 };
