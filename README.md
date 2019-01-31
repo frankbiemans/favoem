@@ -1,2 +1,2 @@
-# Start Kit - Basic HTML
-HTML Startkit
+# Favoem - HTML templates
+Static HTML templates for the Favoem website. 
