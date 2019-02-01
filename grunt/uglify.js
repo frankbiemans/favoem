@@ -3,7 +3,8 @@ module.exports = {
         files: {
             '<%= build %>/scripts/libraries.min.js': [
             'bower_components/jquery/dist/jquery.js',
-            'bower_components/modernizr/modernizr.js'
+            'bower_components/modernizr/modernizr.js',
+            'bower_components/waypoints/lib/jquery.waypoints.js'
             ]
         }
     },

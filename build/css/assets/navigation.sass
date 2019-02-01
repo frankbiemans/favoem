@@ -1,0 +1,113 @@
+
+.menu-wrapper__main-menu,
+.menu-wrapper__contact
+	padding: 0
+	margin: 0
+	list-style: none
+	color: white
+
+	a
+		color: white
+
+.contact__li 
+	margin: .25rem 
+
+.logo-and-hamburger
+	background-color: transparent
+	position: fixed
+	display: block
+	z-index: 200
+	top: 0
+	left: 0
+	right: 0
+
+.menu-wrapper
+	transition: width .25s ease-in-out .25s, height .25s ease-in-out .5s, background-color .25s ease-in-out .5s 
+	z-index: 100
+	display: block
+	position: fixed
+	background-color: darken($pink, 7.5)
+	height: 0%
+	width: 7.5%
+	left: 50%
+	top: 50%
+	transform: translateY(-50%) translateX(-50%)
+	pointer-events: none
+	opacity: 1
+
+	.main-nav--active &
+		pointer-events: initial
+		background-color: $pink
+		transition: height .25s ease-in-out, background-color .25s ease-in-out, width .25s ease-in-out .25s
+		height: 100%
+		width: 100%
+
+.menu-wrapper__main-menu
+	display: block
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 0
+	right: 0
+
+.main-menu__li
+	position: relative
+	transition: all .25s ease-in-out 0s
+	opacity: 0
+	left: -3rem
+
+	.main-nav--active &
+		$delay: .5s
+		transition: all .2s $transition--bouncey $delay
+		left: 0
+		opacity: 1
+
+		@for $i from 1 through 20
+			$delay: $delay + .15s
+			&:nth-child(#{$i})
+				transition-delay: $delay
+
+.main-menu__a
+	padding: 1.5rem 0
+	font-size: 2.5rem
+	font-weight: 700
+	line-height: 1
+	display: block
+	position: relative
+	margin: .25rem 0
+	text-transform: uppercase
+
+	span
+		position: relative
+
+		&:after
+			transition: all .15s $transition--bouncey
+			display: block
+			position: absolute
+			content: ''
+			height: 3px
+			width: 0%
+			bottom: 0
+			background-color: white
+			left: 50%
+			transform: translateX(-50%)
+
+	&:hover, &:active, &:focus
+		text-decoration: none
+
+		span
+			&:after
+				width: 100%
+
+.menu-wrapper__menu-footer
+	transition: all .15s ease-in-out 0s
+	position: absolute
+	bottom: -2rem
+	left: 0
+	right: 0
+	opacity: 0
+
+	.main-nav--active &
+		transition: all .2s $transition--bouncey .65s
+		bottom: 1rem
+		opacity: 1
