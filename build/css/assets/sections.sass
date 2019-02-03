@@ -1,0 +1,23 @@
+
+.section
+	display: block
+	position: relative
+	min-height: 100vh
+
+.section__content-wrapper
+	@include vertical-align-center()
+	transition: opacity .4s ease-in-out .3s, top .55s $transition--bouncey .35s
+
+	.section--inactive &
+		top: 70%
+		opacity: 0
+
+.section--about-favoem
+	background: #4d1b26
+	text-align: center
+
+.section__h1
+	transition: margin .65s $transition--bouncey .4s
+
+	.section--inactive &
+		margin-bottom: 3.5rem

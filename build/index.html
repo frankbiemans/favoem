@@ -24,8 +24,36 @@
 
 	<link rel="stylesheet" href="css/libraries.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+	<style>
+	.loading-screen {
+		background: #16242d;
+		position: fixed;
+		display: block;
+		z-index: 9000;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+</style>
 </head>
-<body>
+<body class="page-loading">
+	<div class="loading-screen">
+		<div class="loading-screen__inner">
+			<div class="sk-cube-grid">
+				<div class="sk-cube sk-cube1"></div>
+				<div class="sk-cube sk-cube2"></div>
+				<div class="sk-cube sk-cube3"></div>
+				<div class="sk-cube sk-cube4"></div>
+				<div class="sk-cube sk-cube5"></div>
+				<div class="sk-cube sk-cube6"></div>
+				<div class="sk-cube sk-cube7"></div>
+				<div class="sk-cube sk-cube8"></div>
+				<div class="sk-cube sk-cube9"></div>
+			</div>
+		</div>
+	</div>
 	<div class="master-wrapper">
 		<div class="master-wrapper__inner">
 
@@ -39,14 +67,14 @@
 							</div>
 							<div class="col-6">
 
-				                <div class="float-right">
-				                    <div class="hamburger hamburger--emphatic js-hamburger">
-				                        <div class="hamburger-box">
-				                            <div class="hamburger-inner"></div>
-				                        </div>
-				                    </div>
-				                </div>
-                
+								<div class="float-right">
+									<div class="hamburger hamburger--emphatic js-hamburger">
+										<div class="hamburger-box">
+											<div class="hamburger-inner"></div>
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -63,10 +91,15 @@
 							<ul class="menu-wrapper__contact">
 								<li class="contact__li contact__tel"><a href="tel:0610601817">06 10601817</a></li>
 								<li class="contact__li contact__email"><a href="mailto:info@favoem.nl">info@favoem.nl</a></li>
-								<li class="contact__li contact__email">Wandeling 12 &bull; 4301 JT &bull; Zierikzee</li>
+								<li class="contact__li contact__address"><a href="https://www.google.com/maps/place/Wandeling+12,+4301+JT+Zierikzee/@51.650245,3.9230145,17z/data=!3m1!4b1!4m5!3m4!1s0x47c45f87d279a481:0x109aec4d2913734a!8m2!3d51.6502417!4d3.9252032" target="_blank">Wandeling 12 &bull; 4301 JT &bull; Zierikzee</a></li>
 							</ul>
 							<div class="menu-wrapper__social">
-								[social stuff]
+								<ul class="social">
+									<li class="social__li"><a class="social__a" href="mailto:info@favoem.nl"><i class="fas fa-envelope"></i></a></li>
+									<li class="social__li"><a class="social__a" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="social__li"><a class="social__a" href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="social__li"><a class="social__a" href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -74,24 +107,43 @@
 
 			</nav>
 
-			<header>
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h1>Header</h1>
+			<header class="header">
+				<div class="header__content-holder">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h1 class="h1 header__h1">Wij zijn een creatief digitaal ontwerpbureau...</h1>
+								<div class="button">Bekijk onze projecten</div>
+							</div>
 						</div>
+					</div>
+				</div>
+
+				<div class="bottom-icon-wrapper">
+					<div class="bottom-icon">
+						<i class="fas fa-arrows-v"></i>
 					</div>
 				</div>
 			</header>
 
 			<main>
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2>Main</h2>
+				<section class="section setion--wrapper section--about-favoem section--inactive">
+					<div class="section__content-wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2 class="h1 section__h1">...en werken graag aan cimplexe online vraagstukken</h2>
+									<p>
+										Favoem interactives is gespecialiseerd in ht ontwerpen en bouwen van maatwerken websites, mijn-omgeving en apps tot complete digitale first indentiteiten. Doen doen we door strategie, ontwerp en realisatie samen te laten smelten tot verassende en effectieve digitale oplossingne.
+									</p>
+									<p class="pt-2">
+										<a class="button-ghost" href="#">Meer over ons</a>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 			</main>
 
 

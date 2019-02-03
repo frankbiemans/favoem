@@ -1,11 +1,27 @@
 
 @import 'assets/vars'
+@import 'assets/mixins'
+@import 'assets/spinners'
+@import 'assets/animations'
 @import 'assets/navigation'
+@import 'assets/buttons'
+@import 'assets/social'
+@import 'assets/icons'
 @import 'assets/hamburger'
 @import 'assets/headings'
+@import 'assets/header'
+@import 'assets/sections'
 
 body, html
-	background: lighten(black, 5%)
+	background: #0a080b
 	padding: 0
 	margin: 0
 	font-size: 16px
+	color: white
+
+.page-loaded
+	.loading-screen
+		opacity: 0
+		z-index: -1
+		transform: scale(.65)
+		transition: opacity .5s ease-in-out .25s, transform .5s ease-in-out .25s, z-index 0s linear 1s

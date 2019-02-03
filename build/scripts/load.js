@@ -5,20 +5,24 @@ $(window).resize(function() {
     }, 260);
 });
 
-$(window).bind('resizeEnd', function() {
-    console.log('Window is resized');
-});
+$(window).bind('resizeEnd', function() {});
 
 $(document).ready(function() {
-    console.log('Document ready');
-
     $('.hamburger').on('click', function() {
         $(this).toggleClass('is-active');
         $('.main-nav').toggleClass('main-nav--active');
     });
+
+
+    $('.section--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('section--inactive');
+        },
+        offset: '60%'
+    });
 });
 
 $(window).on("load", function() {
-    console.log('Page loaded');
-    $('body').addClass('page-loaded');
+
+    $('body').toggleClass('page-loading page-loaded');
 });

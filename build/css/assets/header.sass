@@ -1,0 +1,20 @@
+.header
+	position: relative
+	min-height: 100vh
+	background: #3d4655
+
+.header__content-holder
+	@include vertical-align-center()
+	transition: opacity .25s ease-in-out .85s, top .25s $transition--bouncey .85s
+	text-align: center
+	opacity: 1
+
+	.page-loading &
+		top: 65%
+		opacity: 0
+
+.header__h1
+	transition: margin .25s $transition--bouncey .9s
+
+	.page-loading &
+		margin-bottom: 3.5rem

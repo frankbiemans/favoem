@@ -1,0 +1,18 @@
+
+
+.button
+	@include button-base()
+	background-color: $pink
+	color: white
+
+	&:before
+		background-color: darken($pink, 10%)
+
+.button-ghost
+	@include button-base()
+	border: 2px solid white
+	color: white
+
+	&:hover, &:active, &:focus
+		color: $pink
+		border-color: $pink

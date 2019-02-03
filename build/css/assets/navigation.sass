@@ -10,16 +10,23 @@
 		color: white
 
 .contact__li 
-	margin: .25rem 
+	margin: .25rem
+
+.contact__email
+	text-decoration: underline
 
 .logo-and-hamburger
+	transition: top .3s $transition--bouncey .5s
 	background-color: transparent
 	position: fixed
 	display: block
 	z-index: 200
-	top: 0
+	top: 1rem
 	left: 0
 	right: 0
+
+	.page-loading &
+		top: -6.5rem
 
 .menu-wrapper
 	transition: width .25s ease-in-out .25s, height .25s ease-in-out .5s, background-color .25s ease-in-out .5s 
@@ -45,7 +52,7 @@
 .menu-wrapper__main-menu
 	display: block
 	position: absolute
-	top: 50%
+	top: 45%
 	transform: translateY(-50%)
 	left: 0
 	right: 0
@@ -54,7 +61,7 @@
 	position: relative
 	transition: all .25s ease-in-out 0s
 	opacity: 0
-	left: -3rem
+	left: -4rem
 
 	.main-nav--active &
 		$delay: .5s
@@ -109,5 +116,21 @@
 
 	.main-nav--active &
 		transition: all .2s $transition--bouncey .65s
-		bottom: 1rem
+		bottom: 2rem
 		opacity: 1
+
+.menu-wrapper__social
+	.social__li
+		$delay: 1s
+		transition: all .2s $transition--bouncey $delay
+		transform: scale(.5)
+		opacity: 0
+
+		.main-nav--active &
+			transform: scale(1)
+			opacity: 1
+
+			@for $i from 1 through 20
+				$delay: $delay + .1s
+				&:nth-child(#{$i})
+					transition-delay: $delay

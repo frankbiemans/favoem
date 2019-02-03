@@ -9,7 +9,9 @@ module.exports = {
 			'bower_components/SpinKit/css/spinkit.css',
 			'bower_components/css-hamburgers/dist/hamburgers.css',
 			
-			'node_modules/bootstrap/scss/bootstrap-custom.css'
+			'node_modules/bootstrap/scss/bootstrap-custom.css',
+
+			'C:\\Users\\frank\\Desktop\\Projecten\\Font-Awesome\\web-fonts-with-css\\css\\fontawesome-all.css'
 			]
 		}
 	}
