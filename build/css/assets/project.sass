@@ -1,0 +1,68 @@
+.project-wrapper
+	position: relative
+	min-height: 100vh
+
+.project
+	transition: opacity .4s ease-in-out .3s, top .55s $transition--bouncey .35s
+	position: absolute
+	opacity: 1
+	top: 50%
+	left: 0
+	right: 0
+	transform: translateY(-50%)
+
+	.project-wrapper--inactive &
+		opacity: 0
+		top: 65%
+
+.project__inner
+	text-align: center
+
+.project__client
+
+.project__title
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, .6)
+
+.project__image
+	box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.3)
+
+	img
+		width: 100%
+
+.project__button-wrapper
+	margin-top: 1.5rem
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	.project__inner,
+	.project__image
+		padding: 0
+
+	.project__inner
+		position: relative
+		text-align: left
+
+	.project__image
+		margin: 0
+
+		.project-wrapper:nth-child(even) &
+
+	.project__text
+		position: absolute
+		top: 45%
+		transform: translateY(-50%)
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.project__text
+		z-index: 1
+
+	.project__title
+		display: block
+		position: relative
+		text-shadow: none
+		width: 200%
+		margin-left: -25%
+
+		.order-lg-2 &
+			margin-left: 0
+			margin-right: -25%
+			float: right

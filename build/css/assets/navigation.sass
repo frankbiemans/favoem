@@ -25,9 +25,37 @@
 	left: 0
 	right: 0
 
+	.logo-wrapper
+		max-width: 212px
+
 	.page-loading &
 		top: -6.5rem
 
+.logo-wrapper
+	position: relative
+
+	img
+		transition: opacity .5s ease-in-out
+
+.logo--white
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: auto
+	opacity: 0
+
+	.main-nav--active &, 
+	.scrolled-post-header &
+		opacity: 1
+
+.logo--pink
+	opacity: 1
+
+	.main-nav--active &, 
+	.scrolled-post-header &
+		opacity: 0
+		
 .menu-wrapper
 	transition: width .25s ease-in-out .25s, height .25s ease-in-out .5s, background-color .25s ease-in-out .5s 
 	z-index: 100
@@ -134,3 +162,7 @@
 				$delay: $delay + .1s
 				&:nth-child(#{$i})
 					transition-delay: $delay
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.contact__email
+		text-decoration: none

@@ -1,0 +1,73 @@
+
+form, .form
+	margin-top: 1rem
+	margin-left: -.5rem
+	margin-right: -.5rem
+
+label
+	display: block
+	position: relative
+	margin: 1rem 0
+
+input, select, textarea, input.button
+	outline: 0
+	
+	&::-webkit-input-placeholder
+		color: #a6a9ad
+		opacity: 1
+
+	&::-moz-placeholder
+		color: #a6a9ad
+		opacity: 1
+
+	&:-ms-input-placeholder
+		color: #a6a9ad
+		opacity: 1
+
+	&:-moz-placeholder
+		color: #a6a9ad
+		opacity: 1
+
+.input, .textarea
+	position: relative
+	display: block
+	margin: 0
+	padding: 0
+	width: 100%
+	border: 0
+	background-color: #424c57
+	color: #a6a9ad
+	font-family: $base-font
+	font-weight: 700
+	font-size: 1rem
+	border-radius: .5rem
+	padding: .75rem 1rem
+	font-size: .8rem
+
+.input--error
+	background-color: #596674
+
+.textarea
+	min-height: 5rem
+
+.button--submit
+	float: right
+	border-width: 1px
+	font-size: .8rem
+	margin-top: 1.25rem
+
+.form__error
+	font-size: .65rem
+	text-transform: uppercase
+	color: $pink
+	text-align: right
+	font-weight: 600
+	margin-bottom: .15rem
+
+@media(min-width:map-get($grid-breakpoints, md))
+	margin-left: 0
+	margin-right: 0
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	form, .form
+		margin-top: 2rem

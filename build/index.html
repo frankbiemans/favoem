@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -22,9 +21,6 @@
 	<meta property="og:type" content="" />
 	<meta property="og:url" content="" />
 
-	<link rel="stylesheet" href="css/libraries.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
 	<style>
 	.loading-screen {
 		background: #16242d;
@@ -37,8 +33,11 @@
 		top: 0;
 	}
 </style>
+
+<link rel="stylesheet" href="css/libraries.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
-<body class="page-loading">
+<body class="home page-loading">
 	<div class="loading-screen">
 		<div class="loading-screen__inner">
 			<div class="sk-cube-grid">
@@ -60,13 +59,17 @@
 			<nav class="main-nav">
 
 				<div class="logo-and-hamburger">
-					<div class="container">
+					<div class="container container-xl-fluid">
 						<div class="row align-items-center">
-							<div class="col-6">
-								Logo
+							<div class="col-5 col-md-3 col-lg-2">
+								<figure class="logo-wrapper">
+									<a href="/">
+										<img src="images/favoem-white.png" class="logo--white img-fluid" width="212" height="130" title="Favoem!" />
+										<img src="images/favoem.png" class="logo--pink img-fluid" width="212" height="130" title="Favoem!" />
+									</a>
+								</figure>
 							</div>
-							<div class="col-6">
-
+							<div class="col">
 								<div class="float-right">
 									<div class="hamburger hamburger--emphatic js-hamburger">
 										<div class="hamburger-box">
@@ -108,33 +111,38 @@
 			</nav>
 
 			<header class="header">
+				<div class="background-wrapper"></div>
 				<div class="header__content-holder">
 					<div class="container">
-						<div class="row">
-							<div class="col">
-								<h1 class="h1 header__h1">Wij zijn een creatief digitaal ontwerpbureau...</h1>
-								<div class="button">Bekijk onze projecten</div>
+						<div class="row justify-content-center align-items-end">
+							<div class="col col-lg-7 col-xl-5">
+								<h1 class="h1 header__h1">Wij zijn <br class="d-none d-xl-block">een creatief digitaal ontwerpbureau...</h1>
+							</div>
+							<div class="col col-lg-7 col-xl-7">
+								<div class="button button--view-projects">Bekijk onze projecten</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="bottom-icon-wrapper">
-					<div class="bottom-icon">
+					<div class="bottom-icon bottom-icon--next-section">
 						<i class="fas fa-arrows-v"></i>
 					</div>
 				</div>
 			</header>
 
-			<main>
-				<section class="section setion--wrapper section--about-favoem section--inactive">
+			<main class="main">
+				<section class="section section--about-favoem section--inactive section--full-height">
 					<div class="section__content-wrapper">
 						<div class="container">
-							<div class="row">
-								<div class="col-12">
-									<h2 class="h1 section__h1">...en werken graag aan cimplexe online vraagstukken</h2>
+							<div class="row justify-content-center justify-content-xl-start">
+								<div class="col-12 col-lg-8 col-xl-8 offset-xl-4">
+									<h2 class="h1 section__h1">...en werken graag aan complexe online vraagstukken</h2>
+								</div>
+								<div class="col-12 col-lg-8 col-xl-7">
 									<p>
-										Favoem interactives is gespecialiseerd in ht ontwerpen en bouwen van maatwerken websites, mijn-omgeving en apps tot complete digitale first indentiteiten. Doen doen we door strategie, ontwerp en realisatie samen te laten smelten tot verassende en effectieve digitale oplossingne.
+										Favoem Interactives is gespecialiseerd in het ontwerpen en bouwen van maatwerk websites, mijn-omgevingen en apps tot complete digital first identiteiten. Dat doen we door strategie, ontwerp en realisatie samen te laten smelten tot verassende en effectieve digitale oplossingen.
 									</p>
 									<p class="pt-2">
 										<a class="button-ghost" href="#">Meer over ons</a>
@@ -144,24 +152,343 @@
 						</div>
 					</div>
 				</section>
-			</main>
 
-
-			<footer>
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Footer</h3>
+				<section class="section section--projects section--inactive">
+					<div class="project-wrapper project-wrapper--inactive">
+						<div class="project">
+							<div class="project__inner">
+								<div class="container container-xl-fluid">
+									<div class="row justify-content-center justify-content-xl-start">
+										<div class="col-10 col-lg-6 col-xl-4 order-lg-2 offset-xl-1">
+											<div class="project__text">
+												<h4 class="h4 project__client">TEVA Pharma ceutical Industries</h4>
+												<h3 class="h3 project__title"><a href="#">Lorum ipsum dolor sit amet</a></h3>
+												<p class="d-none d-lg-block project__excerpt">
+													Lorem ipsum dolor sit amet consectetur  adipiscin elit. Morbi vitae dignissim nunc Phasel lus feugiat ips um metus tinci dunt dolor sit amet. 
+												</p>
+												<div class="button-wrapper project__button-wrapper">
+													<a href="#" class="button-ghost d-none d-lg-inline-block">
+														Bekijk dit project
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-10 col-md-8 col-lg-6 col-xl-4">
+											<figure class="project__image">
+												<a href="#">
+													<img src="images/project-1-thumb.jpg" class="img-fluid" width="580" height="800" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				
-			</footer>
+					<div class="project-wrapper project-wrapper--inactive">
+						<div class="project">
+							<div class="project__inner">
+								<div class="container container-xl-fluid">
+									<div class="row justify-content-center justify-content-xl-end">
+										<div class="col-10 col-lg-6 col-xl-4">
+											<div class="project__text">
+												<h4 class="h4 project__client">Bouwbedrijf Quant</h4>
+												<h3 class="h3 project__title"><a href="#">Excep teur sint occaecat cupi datat non proident</a></h3>
+												<p class="d-none d-lg-block project__excerpt">
+													Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+												</p>
+												<div class="button-wrapper project__button-wrapper">
+													<a href="#" class="button-ghost d-none d-lg-inline-block">
+														Bekijk dit project
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-10 col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+											<figure class="project__image">
+												<a href="#">
+													<img src="images/project-2-thumb.jpg" class="img-fluid" width="580" height="800" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-wrapper project-wrapper--inactive">
+						<div class="project">
+							<div class="project__inner">
+								<div class="container container-xl-fluid">
+									<div class="row justify-content-center justify-content-xl-start">
+										<div class="col-10 col-lg-6 col-xl-4 order-lg-2 offset-xl-1">
+											<div class="project__text">
+												<h4 class="h4 project__client">Gaastra Sails</h4>
+												<h3 class="h3 project__title"><a href="#">Phasel lus feugiat ip sum met us tincidunt</a></h3>
+												<p class="d-none d-lg-block project__excerpt">
+													Lorem ipsum dolor sit amet consectetur  adipiscin elit. Morbi vitae dignissim nunc Phasellus feugiat ipsum metus tincidunt dolor sit amet. 
+												</p>
+												<div class="button-wrapper project__button-wrapper">
+													<a href="#" class="button-ghost d-none d-lg-inline-block">
+														Bekijk dit project
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-10 col-md-8 col-lg-6 col-xl-4">
+											<figure class="project__image">
+												<a href="#">
+													<img src="images/project-3-thumb.jpg" class="img-fluid" width="580" height="800" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section--values">
+
+					<div class="value-wrapper value-wrapper--inactive">
+						<div class="value">
+
+							<div class="value__inner">
+								<div class="container container-xl-fluid">
+									<div class="row justify-content-center justify-content-lg-start">
+										<div class="col-5 col-md-3 col-lg-2">
+											<figure class="value__icon">
+												<img src="images/icon-doelstellingen.png" class="img-fluid" width="267" height="264" />
+											</figure>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-lg-10">
+											<h3 class="h3 value__title">Met helder geformuleerde <br class="d-none d-lg-block" />doelstellingen gaan we <br class="d-none d-lg-block" />aan de slag...</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="value-wrapper value-wrapper--inactive">
+						<div class="value">
+							<div class="value__inner">
+								<div class="container container-xl-fluid">
+									<div class="row justify-content-center justify-content-lg-end">
+										<div class="col-5 col-md-3 col-lg-2">
+											<figure class="value__icon">
+												<img src="images/icon-strategie.png" class="img-fluid" width="260" height="260" />
+											</figure>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<div class="col col-lg-10 offset-lg-2">
+												<h3 class="h3 value__title">...zetten doeltreffende <br class="d-none d-lg-block" />strategieën uit en ontwikkelen <br class="d-none d-lg-block" /> waanzinnige concepten...</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="value-wrapper value-wrapper--inactive">
+						<div class="value">
+							<div class="value__inner">
+								<div class="container container-xl-fluid">
+									<div class="row justify-content-center justify-content-lg-start">
+										<div class="col-5 col-md-3 col-lg-2">
+											<figure class="value__icon">
+												<img src="images/icon-dromen.png" class="img-fluid" width="257" height="291" />
+											</figure>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-lg-10">
+											<h3 class="h3 value__title">...en brengen wensen <br class="d-none d-lg-block" />en dromen samen <br class="d-none d-lg-block" />tot verassende en effectieve <br class="d-none d-lg-block" />digitale oplossingen</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section--instagram">
+					<div class="container container-xl-fluid">
+						<div class="row justify-content-center">
+							<div class="col col-lg-8 col-xl-10 offset-xl-2">
+								<h2 class="h1 h--with-i section__h1 h1--instagram">
+									<i class="fab fa-instagram"></i>
+									Volg ons ook <br class="d-none d-xl-block" />op instagram <a href="#" class="h__a--inline-block" target="_blank">#Favoem</a>
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="instagram-wrapper instagram-wrapper--inactive">
+						<div class="container-fluid">
+							<div class="row no-gutters row-justify-content">
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--1">
+										<a href="#" target="_blank" class="instagram-post__a">
+											<img class="instagram-post__img img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--2">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--3">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--4">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--5">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--6">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--7">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2">
+									<figure class="instagram-post instagram-post--8">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2 d-md-none d-lg-block">
+									<figure class="instagram-post instagram-post--9">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2 d-none d-lg-block">
+									<figure class="instagram-post instagram-post--10">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2 d-none d-lg-block">
+									<figure class="instagram-post instagram-post--11">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+								<div class="col-4 col-md-3 col-lg-2 d-none d-lg-block">
+									<figure class="instagram-post instagram-post--12">
+										<a href="#" target="_blank">
+											<img class="img-fluid" src="images/insta-dummy.jpg" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container container-xl-fluid">
+		<div class="row justify-content-center justify-content-xl-start">
+			<div class="col col-lg-8 col-xl-6 offset-xl-4">
+				<h4 class="h4 footer_h4">Nieuwsgierig geworden?</h4>
+			</div>
+		</div>
+		<div class="row justify-content-center justify-content-xl-start">
+			<div class="col col-lg-9 col-xl-8 offset-xl-2">
+				<h3 class="h3 footer_h3">Of kunnen we je ergens mee helpen?</h3>
+			</div>
+		</div>
+		<div class="row justify-content-center justify-content-xl-start">
+			<div class="col col-lg-8 col-xl-4 offset-xl-4">
+				<p>Heb je een vraag, een tof project of wil je een stukje Favoem ervaren? Neem dan contact met ons op. Marcel of Robert helpen je graag.</p>
+			</div>
+		</div>
+		<div class="row justify-content-center justify-content-xl-start">
+			<div class="col-12 col-lg-8 col-xl-4 offset-xl-4">
+				<form class="form">
+					<label for="name">
+						<input class="input input--text" name="name" type="text" placeholder="Je naam">
+					</label>
+					<label for="email">
+						<div class="form__error">Dit is geen geldig lorem ipsum at quira</div>
+						<input class="input input--text input--error" name="email" type="text" placeholder="Je e-mailadres of telefoonnummer">
+					</label>
+					<label for="message">
+						<textarea class="textarea textarea--default-text" name="message">Wat is je vraag?</textarea>
+					</label>
+					<input type="submit" class="button-ghost button--submit" value="Verzenden" />
+				</form>
+			</div>
 		</div>
 	</div>
 
-	<script src="scripts/libraries.min.js"></script>
-	<script src="scripts/functions.min.js"></script>
-	<script src="scripts/load.min.js"></script>
+	<div class="footer__contact">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-9">
+					<figure class="logo-wrapper footer_logo-wrapper">
+						<img src="images/favoem.png" class="img-fluid" width="212" height="130" title="Favoem!" />
+					</figure>
+				</div>
+				<div class="col-12">
+					<p>
+						<a href="https://www.google.com/maps/place/Wandeling+12,+4301+JT+Zierikzee/@51.650245,3.9230145,17z/data=!3m1!4b1!4m5!3m4!1s0x47c45f87d279a481:0x109aec4d2913734a!8m2!3d51.6502417!4d3.9252032" target="_blank">Wandeling 12&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;4301 JT&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Zierikzee</a>
+					</p>
+
+					<ul class="social footer__social">
+						<li class="social__li"><a class="social__a" href="mailto:info@favoem.nl"><i class="fas fa-envelope"></i></a></li>
+						<li class="social__li"><a class="social__a" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="social__li"><a class="social__a" href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="social__li"><a class="social__a" href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</div>
+
+<script src="scripts/libraries.min.js"></script>
+<script src="scripts/functions.min.js"></script>
+<script src="scripts/load.min.js"></script>
 </body>
 </html>

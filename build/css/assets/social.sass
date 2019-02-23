@@ -17,3 +17,12 @@
 	font-size: 1.6rem
 	line-height: 1.85
 	color: $pink
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.social__a
+		transition: opacity .15s ease-in-out
+		opacity: .8
+
+		&:hover
+			opacity: 1
+			color: $pink

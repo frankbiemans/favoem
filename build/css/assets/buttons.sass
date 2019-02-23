@@ -14,5 +14,9 @@
 	color: white
 
 	&:hover, &:active, &:focus
+		background-color: white
 		color: $pink
-		border-color: $pink
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.button-ghost
+		transition: all .15s ease-in-out

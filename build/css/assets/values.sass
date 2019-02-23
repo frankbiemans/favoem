@@ -1,0 +1,43 @@
+
+.value-wrapper
+	position: relative
+	min-height: 100vh
+
+.value
+	transition: opacity .4s ease-in-out .3s, top .55s $transition--bouncey .35s
+	position: absolute
+	opacity: 1
+	top: 50%
+	left: 0
+	right: 0
+	transform: translateY(-50%)
+
+	.value-wrapper--inactive &
+		opacity: 0
+		top: 65%
+
+.value__inner
+	text-align: center
+
+.value__title
+	font-size: 2rem
+	margin: 0
+
+.value__icon
+	margin: 0 auto 4rem auto
+
+@media(min-width:map-get($grid-breakpoints, md))
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	.value__icon
+		margin: 0 0 3rem 0
+
+	.value__inner
+		text-align: left
+
+		.value-wrapper:nth-child(even) &
+			text-align: right
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.value__title
+		font-size: 2.5rem

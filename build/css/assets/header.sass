@@ -1,7 +1,6 @@
 .header
 	position: relative
 	min-height: 100vh
-	background: #3d4655
 
 .header__content-holder
 	@include vertical-align-center()
@@ -10,7 +9,7 @@
 	opacity: 1
 
 	.page-loading &
-		top: 65%
+		top: 35%
 		opacity: 0
 
 .header__h1
@@ -18,3 +17,47 @@
 
 	.page-loading &
 		margin-bottom: 3.5rem
+		
+.h__a--inline-block
+	position: relative
+	display: inline-block
+	white-space: nowrap
+
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	.header__content-holder
+		top: 60%
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.h__a--inline-block
+		transition: color .25s ease-in-out
+		padding: 0 .2rem
+		margin: 0 -.2rem
+		z-index: 1
+
+		&:before
+			transition: height .25s $transition--bouncey
+			position: absolute
+			content: ''
+			background: #fff
+			height: 0%
+			left: 0
+			right: 0
+			bottom: 0
+
+		&:hover, &:active, &:focus
+			transition-delay: .1s
+			color: $pink
+
+			&:before
+				height: 100%
+				z-index: -1
+
+	.header__content-holder
+		text-align: left
+
+	.button--view-projects
+		float: right
+
+	.header__h1
+		margin: 0

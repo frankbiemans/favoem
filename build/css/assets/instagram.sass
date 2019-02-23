@@ -1,0 +1,38 @@
+
+.instagram-post
+	transition: opacity .25s ease-in-out, top .25s $transition--bouncey
+	position: relative
+	top: 0rem
+	opacity: 1
+	margin: .25rem
+
+	@for $i from 1 through 20
+		&.instagram-post--#{$i}
+			transition-delay: .1s * $i
+
+	.instagram-wrapper--inactive &
+		top: 1rem
+		opacity: 0
+
+.instagram-post__a
+
+.instagram-post__img
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	.instagram-post
+		margin: .5rem
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.h1--instagram
+		font-size: 2rem
+
+	.instagram-post
+		overflow: hidden
+
+		a
+			img
+				transition: transform .2s $transition--bouncey, opacity .2s ease-in-out
+
+			&:hover
+				img
+					transform: scale(1.1)

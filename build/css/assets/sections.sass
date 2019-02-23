@@ -2,6 +2,8 @@
 .section
 	display: block
 	position: relative
+
+.section--full-height
 	min-height: 100vh
 
 .section__content-wrapper
@@ -9,11 +11,11 @@
 	transition: opacity .4s ease-in-out .3s, top .55s $transition--bouncey .35s
 
 	.section--inactive &
-		top: 70%
+		top: 65%
 		opacity: 0
 
-.section--about-favoem
-	background: #4d1b26
+.section--about-favoem,
+.section--instagram
 	text-align: center
 
 .section__h1
@@ -21,3 +23,41 @@
 
 	.section--inactive &
 		margin-bottom: 3.5rem
+
+.section--instagram
+	padding: 2rem 0
+
+@media(min-width:map-get($grid-breakpoints, md))
+	.section--projects,
+	.section--values
+		margin-left: auto
+		margin-right: auto
+		max-width: map-get($container-max-widths, md)
+		padding-left: 1rem
+		padding-right: 1rem
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	.section--values
+		max-width: map-get($container-max-widths, lg)
+
+	.section--projects
+		max-width: (map-get($container-max-widths, lg) * 0.8)
+
+	.section__content-wrapper
+		top: 60%
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.section--values
+		max-width: map-get($container-max-widths, xl)
+
+	.section--projects
+		max-width: (map-get($container-max-widths, xl))
+
+	.section--about-favoem
+		text-align: left
+
+		.section__h1
+			text-align: right
+
+	.section--instagram
+		padding: 4rem 0

@@ -1,3 +1,4 @@
+@import '../../bootstrap-vars.scss'
 
 @import 'assets/vars'
 @import 'assets/mixins'
@@ -11,13 +12,26 @@
 @import 'assets/headings'
 @import 'assets/header'
 @import 'assets/sections'
+@import 'assets/fonts'
+@import 'assets/main'
+@import 'assets/background-wrapper'
+@import 'assets/project'
+@import 'assets/values'
+@import 'assets/instagram'
+@import 'assets/forms'
+@import 'assets/footer'
 
 body, html
-	background: #0a080b
+	font-family: $base-font
+	background: $black
 	padding: 0
 	margin: 0
 	font-size: 16px
 	color: white
+
+.master-wrapper
+	max-width: 100%
+	overflow: hidden
 
 .page-loaded
 	.loading-screen
@@ -25,3 +39,25 @@ body, html
 		z-index: -1
 		transform: scale(.65)
 		transition: opacity .5s ease-in-out .25s, transform .5s ease-in-out .25s, z-index 0s linear 1s
+
+.opacity-0
+	opacity: 0
+
+.opacity-1
+	opacity: 1
+
+@media(min-width:map-get($grid-breakpoints, md))
+	body, html
+		font-size: 18px
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	body, html
+		font-size: 17px
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	body, html
+		font-size: 18px
+
+	.container-xl-fluid
+		width: 100%
+		max-width: 2200px
