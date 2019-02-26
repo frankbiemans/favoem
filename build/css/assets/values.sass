@@ -26,6 +26,9 @@
 .value__icon
 	margin: 0 auto 4rem auto
 
+.value__p
+	margin-top: 1rem
+
 @media(min-width:map-get($grid-breakpoints, md))
 
 @media(min-width:map-get($grid-breakpoints, lg))
@@ -38,6 +41,25 @@
 		.value-wrapper:nth-child(even) &
 			text-align: right
 
+	.value__p
+		margin-top: 2rem
+
 @media(min-width:map-get($grid-breakpoints, xl))
 	.value__title
+		font-size: 2.25rem
+
+	.value__p
+		width: 70%
+
+	.value__p--right
+		margin-left: 30%
+
+@media(min-width:map-get($grid-breakpoints, xxl))
+	.value__title
 		font-size: 2.5rem
+
+	.value__p
+		width: 55%
+
+	.value__p--right
+		margin-left: 45%

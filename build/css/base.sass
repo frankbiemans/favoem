@@ -3,6 +3,7 @@
 @import 'assets/vars'
 @import 'assets/mixins'
 @import 'assets/spinners'
+@import 'assets/tilt-me'
 @import 'assets/animations'
 @import 'assets/navigation'
 @import 'assets/buttons'
@@ -16,6 +17,7 @@
 @import 'assets/main'
 @import 'assets/background-wrapper'
 @import 'assets/project'
+@import 'assets/team'
 @import 'assets/values'
 @import 'assets/instagram'
 @import 'assets/forms'
@@ -57,6 +59,14 @@ body, html
 @media(min-width:map-get($grid-breakpoints, xl))
 	body, html
 		font-size: 18px
+
+	.container-xl-fluid
+		width: 100%
+		max-width: 2200px
+
+@media(min-width:map-get($grid-breakpoints, xxl))
+	body, html
+		font-size: 20px
 
 	.container-xl-fluid
 		width: 100%

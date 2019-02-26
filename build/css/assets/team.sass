@@ -1,0 +1,41 @@
+
+.person-wrapper
+	margin: 2rem 0
+
+.person
+	transition: transform .25s $transition--bouncey, opacity .25s 0s
+	opacity: 1
+	transform: scale(1)
+	text-align: center
+
+	.person-wrapper--inactive &
+		opacity: 0
+		transform: scale(.85)
+
+.person__figure
+	display: block
+	position: relative
+	margin: 0
+
+.person__image
+	width: 100%
+	height: auto
+
+.person__text
+	background: black
+	color: white
+	padding: 1.25rem 1rem
+
+.person__title
+	margin: 0 0 .5rem 0
+	font-size: 1.45rem
+
+.person__p
+	margin: 0
+
+@media(min-width:map-get($grid-breakpoints, lg))
+$delay: .075s
+@for $i from 1 through 50
+	$delay: $delay + .075s
+	.person-wrapper--#{$i} .person
+		transition-delay: $delay

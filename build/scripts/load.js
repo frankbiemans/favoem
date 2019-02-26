@@ -16,38 +16,11 @@ $(window).scroll(function() {
 $(window).bind('resizeEnd', function() {});
 
 $(document).ready(function() {
+    tiltStuff();
+
     $('.hamburger').on('click', function() {
         $(this).toggleClass('is-active');
         $('.main-nav').toggleClass('main-nav--active');
-        // setActiveLogo();
-    });
-
-    $('.section--inactive').waypoint({
-        handler: function(direction) {
-            $(this.element).removeClass('section--inactive');
-        },
-        offset: '60%'
-    });
-
-    $('.project-wrapper--inactive').waypoint({
-        handler: function(direction) {
-            $(this.element).removeClass('project-wrapper--inactive');
-        },
-        offset: '70%'
-    });
-
-    $('.value-wrapper--inactive').waypoint({
-        handler: function(direction) {
-            $(this.element).removeClass('value-wrapper--inactive');
-        },
-        offset: '70%'
-    });
-
-    $('.instagram-wrapper--inactive').waypoint({
-        handler: function(direction) {
-            $(this.element).removeClass('instagram-wrapper--inactive');
-        },
-        offset: '70%'
     });
 
     $('.textarea--default-text').each(function() {
@@ -80,7 +53,49 @@ $(document).ready(function() {
 $(window).on("load", function() {
     $('body').toggleClass('page-loading page-loaded');
 
+    setTeamTitleHeights();
+
+    $('.section--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('section--inactive');
+        },
+        offset: '60%'
+    });
+
+    $('.project-wrapper--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('project-wrapper--inactive');
+        },
+        offset: '70%'
+    });
+
+    $('.value-wrapper--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('value-wrapper--inactive');
+        },
+        offset: '70%'
+    });
+
+    $('.instagram-wrapper--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('instagram-wrapper--inactive');
+        },
+        offset: '70%'
+    });
+
+    $('.person-wrapper--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('person-wrapper--inactive');
+        },
+        offset: '50%'
+    });
+
     if ($(window).scrollTop() > $('.header').height()) {
         $('body').addClass('scrolled-post-header');
     }
+
+    $('.project').on('click', function() {
+        var href = $(this).find('.button-ghost:last-of-type').attr('href');
+        window.location.href = href;
+    });
 });

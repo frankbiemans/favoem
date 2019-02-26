@@ -52,6 +52,9 @@
 		transform: translateY(-50%)
 
 @media(min-width:map-get($grid-breakpoints, xl))
+	.project
+		cursor: pointer
+		
 	.project__text
 		z-index: 1
 
@@ -66,3 +69,12 @@
 			margin-left: 0
 			margin-right: -25%
 			float: right
+
+@media(min-width:map-get($grid-breakpoints, xxl))
+	.project__title
+		width: 250%
+		margin-left: -80%
+
+		.order-lg-2 &
+			margin-left: 0
+			margin-right: -80%

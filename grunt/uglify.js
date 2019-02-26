@@ -4,7 +4,8 @@ module.exports = {
             '<%= build %>/scripts/libraries.min.js': [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/modernizr/modernizr.js',
-            'bower_components/waypoints/lib/jquery.waypoints.js'
+            'bower_components/waypoints/lib/jquery.waypoints.js',
+            'bower_components/tilt.js/dest/tilt.jquery.js'
             ]
         }
     },
