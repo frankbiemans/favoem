@@ -1,18 +1,29 @@
 function tiltStuff() {
+    // $('.tilt-me').tilt({
+    //     maxTilt: 15,
+    //     perspective: 2000,
+    //     easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+    //     scale: 1.05,
+    //     speed: 500,
+    //     transition: true,
+    //     disableAxis: null,
+    //     reset: true,
+    //     glare: false,
+    //     maxGlare: 1
+    // });
+
     $('.tilt-me').tilt({
-        maxTilt: 15,
-        perspective: 2000,
-        easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+        maxTilt: 20,
+        perspective: 1000,
+        easing: "cubic-bezier(0.68, 0, 0.265, 1.55)",
         scale: 1.05,
-        speed: 500,
+        speed: 350,
         transition: true,
-        disableAxis: null,
         reset: true,
-        glare: false,
-        maxGlare: 1
+        glare: false
     });
 
-    if (lg.matches) {}
+    // if (lg.matches) {}
 }
 
 function setTeamTitleHeights() {

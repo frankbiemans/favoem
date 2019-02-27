@@ -13,12 +13,16 @@
   .tilt-me {
     transform-style: preserve-3d; }
     .tilt-me div {
+      position: relative;
       transform-style: preserve-3d; }
     .tilt-me .row > div:first-of-type {
-      z-index: 1; }
+      z-index: 20; }
+    .tilt-me .row > div:last-of-type {
+      z-index: 10; }
     .tilt-me .tilt-me__level-1,
     .tilt-me .tilt-me__level-2,
     .tilt-me .tilt-me__level-3 {
+      position: relative;
       transform: translateZ(0px);
       transition: all .35s ease-in-out; }
     .tilt-me .person__figure, .tilt-me .person__text {
@@ -28,14 +32,11 @@
     .tilt-me:hover .project__image, .tilt-me:hover .person__figure, .tilt-me:hover .person__text {
       box-shadow: 15px 15px 50px 0px rgba(0, 0, 0, 0.3); }
     .tilt-me:hover .tilt-me__level-1 {
-      transform: translateZ(15px);
-      z-index: 10; }
+      transform: translateZ(15px); }
     .tilt-me:hover .tilt-me__level-2 {
-      transform: translateZ(30px);
-      z-index: 20; }
+      transform: translateZ(30px); }
     .tilt-me:hover .tilt-me__level-3 {
-      transform: translateZ(45px);
-      z-index: 30; } }
+      transform: translateZ(45px); } }
 
 @keyframes up-n-down {
   0% {
