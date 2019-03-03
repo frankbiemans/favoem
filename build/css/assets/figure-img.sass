@@ -1,0 +1,29 @@
+
+
+.figure-wrapper
+	overflow: visible
+
+	img
+		transition: opacity .3s ease-in-out, transform .3s $transition--bouncey
+		opacity: 1
+		transform: scale(1)
+
+.figure-wrapper--top
+	margin-top: calc(-50% - 6rem)
+
+	.section--full-height &
+		position: absolute
+		transform: translateY(-50%)
+		margin: 0
+		top: 0
+
+.img--dropshadow
+	box-shadow: 15px 15px 50px 0px rgba(0, 0, 0, .3)
+
+.figure-wrapper--inactive
+	img
+		transform: scale(.85)
+		opacity: 0
+
+.figure__img--stick-out
+	max-width: 150%

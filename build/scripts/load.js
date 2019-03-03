@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     $('.header .bottom-icon--next-section').on('click', function() {
         $('html, body').animate({
-            scrollTop: $('main .section:first-of-type').offset().top
+            scrollTop: $('.main .section:first-of-type').offset().top
         }, 220);
     });
 
@@ -88,6 +88,13 @@ $(window).on("load", function() {
             $(this.element).removeClass('person-wrapper--inactive');
         },
         offset: '50%'
+    });
+
+    $('.figure-wrapper--inactive').waypoint({
+        handler: function(direction) {
+            $(this.element).removeClass('figure-wrapper--inactive');
+        },
+        offset: '70%'
     });
 
     if ($(window).scrollTop() > $('.header').height()) {

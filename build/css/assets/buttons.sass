@@ -1,5 +1,10 @@
 
 
+.button-wrapper
+	display: block
+	position: relative
+	margin-top: 1.5rem
+
 .button
 	@include button-base()
 	background-color: $pink
@@ -10,12 +15,20 @@
 
 .button-ghost
 	@include button-base()
-	border: 2px solid white
+	border: 1px solid white
 	color: white
 
 	&:hover, &:active, &:focus
 		background-color: white
 		color: $pink
+
+.button-ghost--pink
+	border-color: $pink
+	color:  $pink
+
+	&:hover, &:active, &:focus
+		color: $black
+
 
 @media(min-width:map-get($grid-breakpoints, xl))
 	.button-ghost

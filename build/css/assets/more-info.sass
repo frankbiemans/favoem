@@ -1,0 +1,42 @@
+
+.more-info-wrapper
+	padding: 3rem 0
+	background: white
+	color: $gray
+	text-align: center
+	font-size: .8rem
+
+.more-info__contact
+	a
+		color: $gray
+
+.more-info__h
+	font-weight: 700
+	margin-bottom: 1rem
+
+.more-info__figure
+	margin-top: 2rem
+	margin-bottom: 4rem
+
+.arrow
+	display: inline-block
+	position: relative
+	color: $pink
+	line-height: 1
+
+	&:after, &:before
+		position: relative
+		display: inline-block
+		font-size: 2.25rem
+		font-family: 'Font Awesome 5 Pro'
+		top: .55rem
+
+	&.arrow--left
+		&:before
+			margin-right: .5rem
+			content: "\f104"
+
+	&.arrow--right
+		&:after
+			margin-left: .5rem
+			content: "\f105"

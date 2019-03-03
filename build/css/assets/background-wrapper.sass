@@ -19,6 +19,9 @@
 		background-color: $black
 		background-image: url(../images/background-home.jpg)
 
+		.project-page &
+			background-image: url(../images/header-project.jpg)
+
 		&:after
 			position: absolute
 			display: block
@@ -33,4 +36,7 @@
 @media(min-width:map-get($grid-breakpoints, md))
 	.background-wrapper
 		.header &
-			background-image: url(../images/background-home-xl.jpg)
+			background-image: url(../images/background-home-lg.jpg)
+
+			.project-page &
+				background-image: url(../images/header-project-lg.jpg)

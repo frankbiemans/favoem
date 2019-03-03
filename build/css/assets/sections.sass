@@ -3,8 +3,18 @@
 	display: block
 	position: relative
 
+.section--content
+	padding: 3rem 0
+
+	p:last-of-type
+		margin-bottom: 0
+
+.section--extra-padding
+	padding: 6rem 0
+
 .section--full-height
 	min-height: 100vh
+	// padding: 0
 
 .section__content-wrapper
 	@include vertical-align-center()
@@ -33,6 +43,14 @@
 
 	.home &
 		padding: 2rem 0 0 0
+
+.section--content
+	background: #fff
+	text-align: center
+
+.section--content--gray
+	background: #e0dcdc
+	color: $gray
 
 @media(min-width:map-get($grid-breakpoints, md))
 	.section--values
