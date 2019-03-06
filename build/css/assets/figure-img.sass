@@ -10,6 +10,7 @@
 
 .figure-wrapper--top
 	margin-top: calc(-50% - 6rem)
+	width: 100%
 
 	.section--full-height &
 		position: absolute
@@ -26,4 +27,19 @@
 		opacity: 0
 
 .figure__img--stick-out
-	max-width: 150%
+	max-width: 150%100%
+
+@media(min-width:map-get($grid-breakpoints, lg))
+	.figure-wrapper--top
+		position: relative
+		display: block
+		margin-top: -50vh
+
+		// .section--full-height &
+		// 	position: absolute
+		// 	transform: translateY(-50%)
+		// 	margin: 0
+		// 	top: 0
+
+	.figure__img--stick-out
+		max-width: 100%

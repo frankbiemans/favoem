@@ -24,7 +24,12 @@
 	color: $pink
 	line-height: 1
 
+	&:hover
+		text-decoration: none
+		color: $pink
+
 	&:after, &:before
+		transition: all .15s $transition--bouncey
 		position: relative
 		display: inline-block
 		font-size: 2.25rem
@@ -33,10 +38,39 @@
 
 	&.arrow--left
 		&:before
+			left: 0rem
 			margin-right: .5rem
 			content: "\f104"
 
+		&:hover
+			&:before
+				left: -1rem
+
 	&.arrow--right
+		float: right
+
 		&:after
+			right: 0rem
 			margin-left: .5rem
 			content: "\f105"
+
+		&:hover
+			&:after
+				right: -1rem
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.more-info-wrapper
+		padding-top: 5rem
+		padding-bottom: 5rem
+		text-align: left
+
+	.more-info__arrows
+		margin-top: 3rem
+
+	.more-info__figure
+		margin-top: 0
+		margin-bottom: 0
+
+@media(min-width:map-get($grid-breakpoints, xl))
+	.more-info__arrows
+		margin-top: 6rem
