@@ -8,3 +8,28 @@
 	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
 		background: white !important
 		opacity: 1 !important
+
+	.hamburger-box
+		transition: opacity .15s ease-in-out
+		
+		.project-page.scrolled-post-header &
+			opacity: 0
+
+		.project-page.scrolled-post-header .main-nav--active &,
+		.project-page .main-nav--active &
+			opacity: 1
+
+	.hamburger-box--pink
+		top: 15px
+		position: absolute
+		opacity: 0
+
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+			background: $pink !important
+
+		.project-page.scrolled-post-header &
+			opacity: 1
+
+		.project-page.scrolled-post-header .main-nav--active &,
+		.project-page .main-nav--active &
+			opacity: 0

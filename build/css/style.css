@@ -84,16 +84,18 @@
   .logo-wrapper img {
     transition: opacity .5s ease-in-out; }
 
-.logo--white {
+.logo--white,
+.logo--all-pink {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   opacity: 0; }
-  .main-nav--active .logo--white,
-  .scrolled-post-header .logo--white {
-    opacity: 1; }
+
+.main-nav--active .logo--white,
+.scrolled-post-header .logo--white {
+  opacity: 1; }
 
 .logo--pink {
   opacity: 1; }
@@ -426,6 +428,24 @@
   .hamburger .hamburger-inner, .hamburger .hamburger-inner::after, .hamburger .hamburger-inner::before {
     background: white !important;
     opacity: 1 !important; }
+  .hamburger .hamburger-box {
+    transition: opacity .15s ease-in-out; }
+    .project-page.scrolled-post-header .hamburger .hamburger-box {
+      opacity: 0; }
+    .project-page.scrolled-post-header .main-nav--active .hamburger .hamburger-box,
+    .project-page .main-nav--active .hamburger .hamburger-box {
+      opacity: 1; }
+  .hamburger .hamburger-box--pink {
+    top: 15px;
+    position: absolute;
+    opacity: 0; }
+    .hamburger .hamburger-box--pink .hamburger-inner, .hamburger .hamburger-box--pink .hamburger-inner::after, .hamburger .hamburger-box--pink .hamburger-inner::before {
+      background: #fd5173 !important; }
+    .project-page.scrolled-post-header .hamburger .hamburger-box--pink {
+      opacity: 1; }
+    .project-page.scrolled-post-header .main-nav--active .hamburger .hamburger-box--pink,
+    .project-page .main-nav--active .hamburger .hamburger-box--pink {
+      opacity: 0; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -750,6 +770,26 @@ main, .main {
   .figure__img--stick-out {
     max-width: 100%; } }
 
+.project-page .logo--pink {
+  opacity: 1; }
+
+.project-page.scrolled-post-header .logo--pink,
+.project-page.scrolled-post-header .logo--white {
+  opacity: 0; }
+
+.project-page.scrolled-post-header .logo--all-pink {
+  opacity: 1; }
+
+.project-page.scrolled-post-header .main-nav--active .logo--pink,
+.project-page.scrolled-post-header .main-nav--active .logo--all-pink,
+.project-page .main-nav--active .logo--pink,
+.project-page .main-nav--active .logo--all-pink {
+  opacity: 0; }
+
+.project-page.scrolled-post-header .main-nav--active .logo--white,
+.project-page .main-nav--active .logo--white {
+  opacity: 1; }
+
 .project-wrapper {
   position: relative;
   min-height: 100vh; }
@@ -851,14 +891,18 @@ main, .main {
     font-size: 2.25rem;
     font-family: 'Font Awesome 5 Pro';
     top: .55rem; }
-  .arrow.arrow--left:before {
-    left: 0rem;
-    margin-right: .5rem;
-    content: "\f104"; }
-  .arrow.arrow--left:hover:before {
-    left: -1rem; }
+  .arrow.arrow--left {
+    float: left;
+    background: pink; }
+    .arrow.arrow--left:before {
+      left: 0rem;
+      margin-right: .5rem;
+      content: "\f104"; }
+    .arrow.arrow--left:hover:before {
+      left: -1rem; }
   .arrow.arrow--right {
-    float: right; }
+    float: right;
+    background: orange; }
     .arrow.arrow--right:after {
       right: 0rem;
       margin-left: .5rem;
@@ -868,6 +912,7 @@ main, .main {
 
 @media (min-width: 1200px) {
   .more-info-wrapper {
+    font-size: 1rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: left; }

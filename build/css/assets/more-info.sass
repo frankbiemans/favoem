@@ -37,6 +37,9 @@
 		top: .55rem
 
 	&.arrow--left
+		float: left
+		background: pink
+
 		&:before
 			left: 0rem
 			margin-right: .5rem
@@ -48,6 +51,7 @@
 
 	&.arrow--right
 		float: right
+		background: orange
 
 		&:after
 			right: 0rem
@@ -60,6 +64,7 @@
 
 @media(min-width:map-get($grid-breakpoints, xl))
 	.more-info-wrapper
+		font-size: 1rem
 		padding-top: 5rem
 		padding-bottom: 5rem
 		text-align: left
